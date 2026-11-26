@@ -1,4 +1,3 @@
-[README.md](https://github.com/user-attachments/files/35453204/README.md)
 # Resume｜Snow 的個人履歷與作品集
 
 這是我的個人履歷網站。在同一個網站可以查看我的學經歷、技能、結訓證書和網頁作品。
@@ -24,6 +23,15 @@
 - **JavaScript** 處理捲動時的導覽列陰影。
 - **Bootstrap、Font Awesome** 提供部分排版、按鈕與圖示。
 - **GitHub Pages** 發布網站，讓訪客可以用公開網址瀏覽。
+
+## API 串接
+
+[Python 個人理財完整版](https://github.com/Snow-Bo/python-personal-finance)使用 Flask 和 Requests 查詢兩個外部 API。查回來的資料會參與資產計算。
+
+- **全球即時匯率 API** 取得美元兌台幣的匯率。程式把美金現金換算成台幣，再與台幣現金加總。
+- **臺灣證券交易所 API** 依股票代號查詢最近可取得的收盤價。程式用收盤價乘上持有股數，計算持倉市值。
+
+資料由 Flask 查詢與計算，履歷裡的靜態理財頁呈現匯出當時的結果。 [查看 API 串接程式](https://github.com/Snow-Bo/python-personal-finance/blob/main/index.py#L41)
 
 ## 主要檔案
 
